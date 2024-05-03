@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url(https://png.pngtree.com/png-vector/20220526/ourmid/pngtree-comic-speech-bubbles-with-text-quiz-png-image_4731828.png);
+}
+
+button {
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 1rem 7rem;
+    border: 3px solid #23d997;
+    background: transparent;
+    color: black;
+    transition: all 0.5s ease;
+    margin-top: 25px;
+    backdrop-filter: blur(10px);
+    &:hover {
+        background-color: #19e5cd;
+        color: white;
+    }
+
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+ul li{
+    font: 1em sans-serif;
+    padding: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.header {
+    border: 1px solid rgb(8, 138, 155);
+    background-color: aliceblue;
+   
+    padding: 1rem 10rem;
+    width: 586px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px rgba(100, 100, 100, 0.1);
+    position: sticky;
+    top: 0;
+    
+    z-index: 10;        
+height: 47vh;
+}
+
+h2 {
+    font-weight: lighter;
+   font-size: 29px;
+    width: 100%;
+}
