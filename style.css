@@ -19,18 +19,18 @@ button {
     font-weight: bold;
     font-size: 1.1rem;
     cursor: pointer;
-    padding: 1rem 7rem;
+    padding: 1rem 4rem; /* Adjusted padding */
     border: 3px solid #23d997;
     background: transparent;
     color: black;
     transition: all 0.5s ease;
     margin-top: 25px;
     backdrop-filter: blur(10px);
-    &:hover {
-        background-color: #19e5cd;
-        color: white;
-    }
+}
 
+button:hover {
+    background-color: #19e5cd;
+    color: white;
 }
 
 ul {
@@ -38,7 +38,8 @@ ul {
     list-style: none;
     text-align: center;
 }
-ul li{
+
+ul li {
     font: 1em sans-serif;
     padding: 10px 0;
 }
@@ -46,26 +47,36 @@ ul li{
 a {
     text-decoration: none;
     color: black;
-
 }
 
 .header {
     border: 1px solid rgb(8, 138, 155);
     background-color: aliceblue;
-   
-    padding: 1rem 10rem;
-    width: 586px;
+    padding: 1rem 2rem; /* Adjusted padding */
+    max-width: 586px; /* Added max-width */
+    width: 90%; /* Changed width to percentage */
     border-radius: 10px;
     box-shadow: 0 0 10px 10px rgba(100, 100, 100, 0.1);
     position: sticky;
     top: 0;
-    
-    z-index: 10;        
-height: 47vh;
+    z-index: 10;
+    height: 60vh; /* Adjusted height */
 }
 
 h2 {
     font-weight: lighter;
-   font-size: 29px;
+    font-size: 2rem; /* Adjusted font size */
     width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    /* Responsive adjustments for smaller screens */
+    .header {
+        padding: 1rem; /* Adjusted padding */
+        height: 70vh; /* Adjusted height */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Adjusted font size */
+    }
 }
